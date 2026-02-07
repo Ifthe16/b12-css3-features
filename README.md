@@ -1,4 +1,4 @@
-# CSS3 Features
+# Explore CSS3 Features
 
 - Overflow
   - hidden
@@ -18,3 +18,8 @@
   - rotate()
   - skew()
   - translate()
+- Transition
+  - transition-property
+  - transition-duration
+  - transition-timing-function
+  - transition-delay
