@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Hit</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .field{
+            height: 550px;
+            border: 1px solid steelblue;
+            background-image: url('https://img.freepik.com/premium-photo/photo-cricket-stadium-night-with-sport-light-background_1053211-1709.jpg?semt=ais_hybrid&w=740&q=80');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .bat{
+            transition: transform 0.1s ease-in;
+        }
+        .field:hover .bat{
+transform: rotate(-60deg);
+transform-origin: top right;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            left: 515px;
+            transition: transform 1s ease-out 0.2s;
+        }
+        .field:hover .ball{
+            transform: translate(1000px, -500px);
+        }
+        @keyframes ball-move {
+    0%{
+        left: 1250px;
+        top: -100px;
+    }
+    25%{
+        left: 800px;
+        top: 105px;
+    }
+    50%{
+        left: 700px;
+        top: -100px;
+    }
+    100%{
+        left: 510px;
+        top: 0px;
+    }
+}
+        .ball-2{
+            background-color: red;
+            border-radius: 50%;
+height: 50px;
+width: 50px;
+position: relative;
+left: 1250px;
+top: -100px;
+transition: animation 0.5s ease-out, transform 1s ease-out 0.6s, background-color 1s ease-out 0.7s;
+        }
+        .field:hover .ball-2{
+            animation: ball-move 0.5s ease-out 0.1s 1 normal forwards;
+           transform: scale(0.5) translate(1500px, -800px);
+           background-color: white;
+        }
+    .bat-2{
+transition: transform 0.1s ease-in 0.5s;
+    }
+    .field:hover .bat-2{
+        transform: rotate(-60deg);
+        transform-origin: top right;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                 <li>
+                    <a href="overflow.html">Overflow</a>
+                </li>
+                <li><a href="transform.html">Transform</a></li>
+                 <li>
+                    <a href="transition.html">Transition</a>
+                </li>
+                <li>
+                    <a href="animation.html">Animation</a>
+                </li>
+                <li>
+                    <a href="variable.html">Variable</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="field">
+        <img src="images/bat.png" alt="cricket bat image" class="bat">
+        <div class="ball"></div>
+    </div>
+    <div class="field">
+        <img src="images/bat.png" alt="cricket bat image" class="bat-2">
+        <div class="ball-2"></div>
+    </div>
+</body>
+</html>
