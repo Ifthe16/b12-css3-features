@@ -43,31 +43,34 @@
                 background-color: red;
             }
         }
-@keyframes bounce-2 {
-    0%{
-        left: 0px;
-        right: 0px;
-    }
-    25%{
-        left: 150px;
-        top: 100px;
-        background-color: green;
-          clip-path: polygon(
-    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
-  );
-    }
-    50%{
-        left: 300px;
-        top: -100px;
-        background-color: gold;
-clip-path: circle(50%);
-    }
-    100%{
-        left: 500px;
-        top: 100px;
-        background-color: red;
-    }
-}
+
+        @keyframes bounce-2 {
+            0% {
+                left: 0px;
+                right: 0px;
+            }
+
+            25% {
+                left: 150px;
+                top: 100px;
+                background-color: green;
+                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            }
+
+            50% {
+                left: 300px;
+                top: -100px;
+                background-color: gold;
+                clip-path: circle(50%);
+            }
+
+            100% {
+                left: 500px;
+                top: 100px;
+                background-color: red;
+            }
+        }
+
         .stage {
             width: 600px;
             height: 300px;
@@ -83,7 +86,8 @@ clip-path: circle(50%);
             position: relative;
             animation: bounce 3s ease-in-out 1s infinite alternate forwards;
         }
-        .ball-2{
+
+        .ball-2 {
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -91,14 +95,15 @@ clip-path: circle(50%);
             position: relative;
             animation: ping-pong 2s ease-in-out 1s infinite alternate forwards;
         }
-        .ball-3{
+
+        .ball-3 {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             background-color: silver;
             position: relative;
             top: -100px;
-            animation: bounce-2 3s ease-in-out 1s infinite alternate forwards; 
+            animation: bounce-2 3s ease-in-out 1s infinite alternate forwards;
         }
     </style>
 </head>
@@ -110,14 +115,14 @@ clip-path: circle(50%);
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-                 <li>
+                <li>
                     <a href="overflow.html">Overflow</a>
                 </li>
                 <li><a href="transform.html">Transform</a></li>
-                 <li>
+                <li>
                     <a href="transition.html">Transition</a>
                 </li>
-                 <li>
+                <li>
                     <a href="cricket.html">Cricket</a>
                 </li>
                 <li>
@@ -131,8 +136,8 @@ clip-path: circle(50%);
         <div class="ball"></div>
     </div>
     <div class="stage">
-<div class="ball-2"></div>
-<div class="ball-3"></div>
+        <div class="ball-2"></div>
+        <div class="ball-3"></div>
     </div>
 </body>
 

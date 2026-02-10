@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Hit</title>
     <link rel="stylesheet" href="styles/style.css">
     <style>
-        .field{
+        .field {
             height: 550px;
             border: 1px solid steelblue;
             background-image: url('https://img.freepik.com/premium-photo/photo-cricket-stadium-night-with-sport-light-background_1053211-1709.jpg?semt=ais_hybrid&w=740&q=80');
@@ -14,14 +15,17 @@
             background-position: center;
             background-size: cover;
         }
-        .bat{
+
+        .bat {
             transition: transform 0.1s ease-in;
         }
-        .field:hover .bat{
-transform: rotate(-60deg);
-transform-origin: top right;
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
         }
-        .ball{
+
+        .ball {
             height: 50px;
             width: 50px;
             border-radius: 50%;
@@ -30,51 +34,61 @@ transform-origin: top right;
             left: 515px;
             transition: transform 1s ease-out 0.2s;
         }
-        .field:hover .ball{
+
+        .field:hover .ball {
             transform: translate(1000px, -500px);
         }
+
         @keyframes ball-move {
-    0%{
-        left: 1250px;
-        top: -100px;
-    }
-    25%{
-        left: 800px;
-        top: 105px;
-    }
-    50%{
-        left: 700px;
-        top: -100px;
-    }
-    100%{
-        left: 510px;
-        top: 0px;
-    }
-}
-        .ball-2{
+            0% {
+                left: 1250px;
+                top: -100px;
+            }
+
+            25% {
+                left: 800px;
+                top: 105px;
+            }
+
+            50% {
+                left: 700px;
+                top: -100px;
+            }
+
+            100% {
+                left: 510px;
+                top: 0px;
+            }
+        }
+
+        .ball-2 {
             background-color: red;
             border-radius: 50%;
-height: 50px;
-width: 50px;
-position: relative;
-left: 1250px;
-top: -100px;
-transition: animation 0.5s ease-out, transform 1s ease-out 0.6s, background-color 1s ease-out 0.7s;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: 1250px;
+            top: -100px;
+            transition: animation 0.5s ease-out, transform 1s ease-out 0.6s, background-color 1s ease-out 0.7s;
         }
-        .field:hover .ball-2{
+
+        .field:hover .ball-2 {
             animation: ball-move 0.5s ease-out 0.1s 1 normal forwards;
-           transform: scale(0.5) translate(1500px, -800px);
-           background-color: white;
+            transform: scale(0.5) translate(1500px, -800px);
+            background-color: white;
         }
-    .bat-2{
-transition: transform 0.1s ease-in 0.5s;
-    }
-    .field:hover .bat-2{
-        transform: rotate(-60deg);
-        transform-origin: top right;
-    }
+
+        .bat-2 {
+            transition: transform 0.1s ease-in 0.5s;
+        }
+
+        .field:hover .bat-2 {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -82,11 +96,11 @@ transition: transform 0.1s ease-in 0.5s;
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-                 <li>
+                <li>
                     <a href="overflow.html">Overflow</a>
                 </li>
                 <li><a href="transform.html">Transform</a></li>
-                 <li>
+                <li>
                     <a href="transition.html">Transition</a>
                 </li>
                 <li>
@@ -107,4 +121,5 @@ transition: transform 0.1s ease-in 0.5s;
         <div class="ball-2"></div>
     </div>
 </body>
+
 </html>
