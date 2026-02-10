@@ -18,8 +18,27 @@
   - rotate()
   - skew()
   - translate()
+- Transform-origin
 - Transition
   - transition-property
   - transition-duration
   - transition-timing-function
   - transition-delay
+- @keyframes
+  - from
+  - to
+  - percentage %
+- Animation 
+  - name 
+  - duration 
+  - timing-function 
+  - delay 
+  - iteration-count 
+  - direction 
+  - fill-mode
+- Clip-path
+  - circle()
+  - polygon()
+- Root
+  - var()
+- Calc()
